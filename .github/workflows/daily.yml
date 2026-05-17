@@ -1,0 +1,53 @@
+yaml
+name: Daily Kostolany Analysis
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 07:00 KST → 한국장
+    - cron: '0 11 * * *'   # 20:00 KST → 미국장
+    - cron: '0 23 * * *'   # 08:00 KST → 포트폴리오 점검
+  workflow_dispatch:         # 수동 실행 버튼
+    inputs:
+      job:
+        description: '실행할 작업'
+        required: true
+        default: 'KR'
+        type: choice
+        options: [KR, US, PORTFOLIO]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install anthropic requests
+
+      - name: 작업 실행
+        env:
+          ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          HOUR=$(TZ='Asia/Seoul' date +%H)
+          if [ -z "$JOB" ]; then
+            if [ "$HOUR" -eq 7 ]; then JOB="KR"
+            elif [ "$HOUR" -eq 20 ]; then JOB="US"
+            else JOB="PORTFOLIO"
+            fi
+          fi
+          echo "실행: $JOB"
+          if [ "$JOB" = "KR" ]; then python kostolany_v3.py --market KR
+          elif [ "$JOB" = "US" ]; then python kostolany_v3.py --market US
+          else python kostolany_v4.py --check
+          fi
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports_v4/
+          git diff --staged --quiet || git commit -m "📊 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+          git push
