@@ -118,47 +118,77 @@ def analyze(classified: dict, market: str) -> dict:
 === 뉴스 ===
 {news_block}
 
-JSON으로만 응답:
+JSON으로만 응답 (순수 JSON, 마크다운 없이):
 {{
   "market": "{market}",
-  "session_note": "한 줄 요약",
+  "session_note": "오늘 시장 전체 흐름을 3~4문장으로 요약. 핵심 뉴스 2~3개를 언급하고 시장에 미치는 영향을 설명.",
+  "macro_context": "현재 거시경제 환경 설명. 금리/환율/지정학 등 투자에 영향을 미치는 배경을 3~4문장으로 설명.",
   "long_bucket": {{
     "allocation": "70~80%",
-    "theme": "핵심 장기 테마",
+    "theme": "핵심 장기 테마 (구체적으로)",
+    "theme_description": "이 테마가 왜 장기적으로 유효한지 3~4문장으로 설명. 구조적 이유와 지속 가능성 포함.",
     "picks": [
       {{
         "ticker": "코드",
         "name": "종목명",
         "sector": "섹터",
         "hold_period": "보유기간",
-        "rationale": "근거",
+        "rationale": "이 종목을 선택한 이유를 4~5문장으로 상세히 설명. 어떤 뉴스/트렌드에서 포착했는지, 왜 군중이 아직 모르는지, 구조적 수혜 이유, 코스톨라니 관점의 타이밍까지 포함.",
+        "news_source": "근거가 된 뉴스 제목 또는 출처",
         "entry_strategy": "분할매수|일괄매수",
-        "stop_loss": "손절기준",
+        "entry_detail": "언제 어떻게 진입할지 구체적으로 (예: 3회 분할, 1차 현재가/2차 -5%/3차 -10%)",
+        "stop_loss": "손절 기준과 이유",
+        "upside_scenario": "상승 시나리오: 어떤 조건이 충족되면 목표가에 도달하는지",
+        "risk_scenario": "하락 시나리오: 어떤 경우에 투자 근거가 무너지는지",
         "confidence": 82
       }}
     ]
   }},
   "short_bucket": {{
     "allocation": "20~30%",
-    "warning": "리스크 경고",
+    "warning": "단기 트레이딩 리스크 경고 2문장",
     "picks": [
       {{
         "ticker": "코드",
         "name": "종목명",
-        "trigger": "트리거",
-        "expected_move": "기대수익",
+        "trigger": "모멘텀 트리거 상세 설명 (어떤 뉴스/이벤트가 촉매인지)",
+        "trigger_detail": "왜 지금이 진입 타이밍인지 3문장으로 설명. 시장이 아직 미반영한 이유 포함.",
+        "expected_move": "기대수익 (예: +4~6% / 3~5일)",
         "risk_level": "보통|높음|매우높음",
-        "entry_window": "진입시간",
-        "stop_loss": "손절기준",
-        "exit_signal": "익절신호",
+        "entry_window": "진입 가능 시간대",
+        "entry_price": "구체적 진입가 또는 조건",
+        "stop_loss": "손절가와 손절 이유",
+        "exit_signal": "익절 신호 또는 청산 조건 (구체적으로)",
         "confidence": 65
       }}
     ]
   }},
-  "avoid_now": [{{"name": "종목/섹터", "reason": "이유"}}],
-  "kostolany_today": "한마디",
-  "disclaimer": "교육 목적이며 투자 권유 아님"
-}}"""
+  "avoid_now": [
+    {{
+      "name": "종목/섹터",
+      "reason": "왜 피해야 하는지 2~3문장으로 설명. 단순 위험이 아닌 구체적 이유."
+    }}
+  ],
+  "early_signals": [
+    {{
+      "signal": "아직 대중이 모르는 초기 신호",
+      "detail": "왜 초기 신호인지, 어디서 포착했는지 3문장",
+      "related_stocks": "관련 종목들",
+      "time_window": "선점 가능 예상 기간"
+    }}
+  ],
+  "kostolany_today": "오늘 시장 상황에 대한 코스톨라니식 조언. 단순 한마디가 아닌 3~4문장의 실질적 인사이트.",
+  "disclaimer": "이 분석은 코스톨라니 철학 기반 교육 목적이며 실제 투자 권유가 아닙니다."
+}}
+
+규칙:
+- long_bucket picks: 4~5개
+- short_bucket picks: 2~3개
+- avoid_now: 2~3개
+- early_signals: 1~2개
+- 모든 텍스트 필드는 최소 2문장 이상
+- rationale는 반드시 4문장 이상
+- 순수 JSON만 출력"""
 
     try:
         resp = client.messages.create(
