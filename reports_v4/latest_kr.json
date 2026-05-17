@@ -1,1 +1,13 @@
-{}
+{
+  "generated_at": "2026-05-17T11:08:05.167644",
+  "market": "KR",
+  "stats": {
+    "total": 50,
+    "fresh": 0,
+    "short": 6,
+    "long": 16
+  },
+  "analysis": {
+    "error": "Expecting ',' delimiter: line 105 column 6 (char 3984)"
+  }
+}
