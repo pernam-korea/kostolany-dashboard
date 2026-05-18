@@ -8,9 +8,8 @@ const SAMPLE_KR = {
     session_note: "폴란드 SMR 입찰 초기 신호 포착. SK하이닉스 HBM4 계약 연장 확인. 전력기기 수주 모멘텀 지속 중. 카카오는 어닝 쇼크 우려로 관망 필요.",
     macro_context: "미 연준 금리 동결 기조 유지로 성장주에 유리한 환경. 원달러 환율 1,380원대로 수출주 수혜. 지정학 리스크는 안정적이나 중국 경기 둔화는 변수.",
     long_bucket: {
-      allocation: "70~80%",
-      theme: "원전 르네상스 + AI 전력 인프라",
-      theme_description: "AI 데이터센터의 전력 수요 폭증과 탄소중립 정책이 맞물리며 원전이 유일한 대안으로 부상하고 있습니다. 한국 원전 기업들은 기술력과 가격 경쟁력을 동시에 갖춘 글로벌 선두주자입니다.",
+      allocation: "70~80%", theme: "원전 르네상스 + AI 전력 인프라",
+      theme_description: "AI 데이터센터의 전력 수요 폭증과 탄소중립 정책이 맞물리며 원전이 유일한 대안으로 부상하고 있습니다.",
       picks: [
         { ticker: "034020", name: "두산에너빌리티", sector: "원전 기자재",
           hold_period: "12~24개월", entry_strategy: "분할매수",
@@ -25,20 +24,11 @@ const SAMPLE_KR = {
           hold_period: "12~18개월", entry_strategy: "분할매수",
           entry_detail: "2회 분할 — 1차 현재가, 2차 -7%",
           stop_loss: "없음 (장기보유)",
-          rationale: "미 전력망 현대화법 통과로 10년간 $400B 투자 사이클이 시작됐습니다. 북미 변압기 수주잔고가 2년치를 초과해 실적 가시성이 매우 높습니다. 군중은 여전히 중공업주로 분류해 저평가 상태입니다. 코스톨라니가 말한 '대중이 오해할 때 사라'의 전형적인 케이스입니다.",
+          rationale: "미 전력망 현대화법 통과로 10년간 $400B 투자 사이클이 시작됐습니다. 북미 변압기 수주잔고가 2년치를 초과해 실적 가시성이 매우 높습니다. 군중은 여전히 중공업주로 분류해 저평가 상태입니다. 코스톨라니가 말한 대중이 오해할 때 사라의 전형적인 케이스입니다.",
           news_source: "Reuters — US Grid Modernization Act",
           upside_scenario: "미국 추가 수주 발표 시 신고가 경신",
           risk_scenario: "미국 관세 정책 변화 시 수익성 압박",
           confidence: 88 },
-        { ticker: "000660", name: "SK하이닉스", sector: "HBM/메모리",
-          hold_period: "6~12개월", entry_strategy: "분할매수",
-          entry_detail: "2회 분할 — 1차 현재가, 2차 -8%",
-          stop_loss: "-15% 시 재검토",
-          rationale: "HBM4 엔비디아 독점 공급 계약 연장이 확정됐습니다. AI 가속기당 HBM 탑재량이 매 세대 2~4배 증가해 공급 부족 구조가 최소 2년 지속될 전망입니다. 마이크론의 추격이 있지만 SK하이닉스의 기술 격차가 여전히 유효합니다. 현재 주가는 HBM 성장을 충분히 반영하지 못한 저평가 구간입니다.",
-          news_source: "Bloomberg — HBM4 계약 연장",
-          upside_scenario: "HBM4 공급 확대 + ASP 상승 시 목표가 230,000원",
-          risk_scenario: "삼성전자 HBM 퀄 통과 시 점유율 압박",
-          confidence: 85 },
       ]
     },
     short_bucket: {
@@ -49,33 +39,77 @@ const SAMPLE_KR = {
           trigger: "폴란드 SMR 입찰 단독 보도 — 국내 미반영",
           trigger_detail: "니케이 단독 보도 후 2시간 이내 포착된 초기 신호입니다. 국내 증권사 리포트가 나오기 전 선점 가능한 창이 열려 있습니다. 뉴스 확산 시 단기 급등 모멘텀이 예상됩니다.",
           expected_move: "+5~8% / 3~7일", risk_level: "높음",
-          entry_window: "장 초반 09:00~09:30",
-          entry_price: "현재가 시장가 진입",
-          stop_loss: "-5% 손절 (손절가 이탈 시 즉시 실행)",
-          exit_signal: "주요 언론 보도 확산 후 or +7% 달성 시 전량 청산",
+          entry_window: "장 초반 09:00~09:30", entry_price: "현재가 시장가 진입",
+          stop_loss: "-5% 손절", exit_signal: "주요 언론 보도 확산 후 or +7% 달성 시 전량 청산",
           confidence: 72 },
-        { ticker: "010120", name: "LS일렉트릭",
-          trigger: "미 전력망법 통과 — 국내 수혜주 미반영",
-          trigger_detail: "HD현대일렉트릭 대비 저평가 상태로 갭 축소 모멘텀이 예상됩니다. 전력망법 수혜 뉴스가 국내에 알려지면 동반 상승 가능성이 높습니다. 단기 트레이딩 관점에서 리스크 대비 수익 비율이 양호합니다.",
-          expected_move: "+3~5% / 5~7일", risk_level: "보통",
-          entry_window: "09:00~10:00",
-          entry_price: "현재가 또는 -2% 조정 시 진입",
-          stop_loss: "-5% 손절",
-          exit_signal: "HD현대일렉트릭과 갭 축소 or +5% 달성",
-          confidence: 68 },
       ]
     },
     avoid_now: [
-      { name: "카카오 (035720)", reason: "2분기 영업이익이 컨센서스를 27% 하회할 것으로 예상됩니다. 광고 매출 부진과 AI 전환 비용 증가가 겹쳐 실적 발표 전까지 매물 압력이 지속될 전망입니다. 실적 발표 이후 바닥 확인 시 재진입 검토가 적절합니다." },
-      { name: "에코프로·포스코퓨처엠", reason: "전기차 캐즘이 예상보다 길어지며 양극재 수요가 급감하고 있습니다. 2023년 고점 대비 60% 이상 하락했음에도 밸류에이션이 여전히 부담스러운 수준입니다. 반등 시마다 매물이 출회되는 패턴이 반복되고 있어 진입을 자제해야 합니다." },
+      { name: "카카오 (035720)", reason: "2분기 영업이익이 컨센서스를 27% 하회할 것으로 예상됩니다. 광고 매출 부진과 AI 전환 비용 증가가 겹쳐 실적 발표 전까지 매물 압력이 지속될 전망입니다." },
     ],
     early_signals: [
       { signal: "두산에너빌리티 폴란드 SMR 입찰 공식 제출",
-        detail: "니케이 단독 보도로 발행 2시간 이내 포착됐습니다. 국내 증권사 리포트가 아직 없어 시장이 미반영 상태입니다. 뉴스가 확산되기 전 선점 가능한 골든 타임입니다.",
-        related_stocks: "034020 두산에너빌리티, 010120 LS일렉트릭",
-        time_window: "2~3주" }
+        detail: "니케이 단독 보도로 발행 2시간 이내 포착됐습니다. 국내 증권사 리포트가 아직 없어 시장이 미반영 상태입니다.",
+        related_stocks: "034020 두산에너빌리티, 010120 LS일렉트릭", time_window: "2~3주" }
     ],
-    kostolany_today: "오늘 포착된 초기 신호는 전형적인 코스톨라니식 기회입니다. 군중이 아직 모르고, 뉴스가 막 나왔으며, 주가는 미반영 상태입니다. 단, 초기 신호는 항상 불확실성을 동반하므로 전체 자산의 5~10% 이내로 소량 진입 후 확인하는 것이 원칙입니다. 장기 버킷에도 동일 종목이 있다면 단기 버킷은 더 적은 비중으로 접근하세요.",
+    kostolany_today: "오늘 포착된 초기 신호는 전형적인 코스톨라니식 기회입니다. 군중이 아직 모르고, 뉴스가 막 나왔으며, 주가는 미반영 상태입니다. 단, 초기 신호는 항상 불확실성을 동반하므로 전체 자산의 5~10% 이내로 소량 진입 후 확인하는 것이 원칙입니다.",
+    disclaimer: "이 분석은 코스톨라니 철학 기반 교육 목적이며 실제 투자 권유가 아닙니다."
+  }
+};
+
+const SAMPLE_US = {
+  generated_at: new Date().toISOString(),
+  market: "US",
+  stats: { total: 8, fresh: 2, short: 3, long: 5 },
+  analysis: {
+    session_note: "FDA 우선심사 초기 신호(LLY) 포착. 미 전력망법 통과로 GEV·VST 장기 수혜 확인. 엔비디아 HBM4 공급망 확대 뉴스가 MU 수혜로 연결될 가능성.",
+    macro_context: "미 연준 금리 동결 기조 유지. 달러 강세 지속으로 수출 기업 실적 압박. AI 인프라 투자 사이클은 금리 환경과 무관하게 지속 중.",
+    long_bucket: {
+      allocation: "70~80%", theme: "AI 전력 인프라 + 비만치료제 슈퍼사이클",
+      theme_description: "AI 데이터센터 전력 수요가 폭발적으로 증가하며 전력기기·원전 기업이 최대 수혜를 받고 있습니다. 동시에 비만치료제 시장은 글로벌 슈퍼사이클 초입으로 Eli Lilly가 독점적 지위를 구축 중입니다.",
+      picks: [
+        { ticker: "VST", name: "Vistra Energy", sector: "전력/원전",
+          hold_period: "12~36개월", entry_strategy: "분할매수",
+          entry_detail: "3회 분할 — 1차 현재가, 2차 -5%, 3차 -10%",
+          stop_loss: "없음 (장기보유)",
+          rationale: "AI 데이터센터향 장기 전력 PPA 계약을 다수 체결했습니다. 원전과 가스발전 포트폴리오로 안정적 수급이 가능합니다. 군중은 아직 유틸리티주로 분류해 성장주 프리미엄을 부여하지 않고 있습니다. 코스톨라니 관점에서 대중이 오해하는 종목의 전형입니다.",
+          news_source: "Reuters — AI 데이터센터 전력 PPA",
+          upside_scenario: "추가 PPA 계약 발표 시 신고가 경신",
+          risk_scenario: "전력 규제 변화 또는 원전 허가 지연",
+          confidence: 84 },
+        { ticker: "LLY", name: "Eli Lilly", sector: "비만/당뇨 신약",
+          hold_period: "18~36개월", entry_strategy: "분할매수",
+          entry_detail: "2회 분할 — 1차 현재가, 2차 -8%",
+          stop_loss: "없음 (장기보유)",
+          rationale: "비만치료제 글로벌 시장을 사실상 독점하고 있습니다. NASH 적응증 우선심사로 시장 확대가 가속화될 전망입니다. 파이프라인이 풍부해 향후 5년간 신약 출시가 지속됩니다. 노령화 슈퍼사이클과 맞물려 구조적 성장이 보장된 종목입니다.",
+          news_source: "STAT News — FDA 우선심사 부여",
+          upside_scenario: "NASH 승인 + 추가 적응증 확대 시 목표가 $1,000",
+          risk_scenario: "경쟁사 신약 등장 또는 가격 규제 강화",
+          confidence: 86 },
+      ]
+    },
+    short_bucket: {
+      allocation: "20~30%",
+      warning: "단기 버킷은 전체 자산의 20~30% 이내로 제한하세요. 한 종목에 버킷의 50% 이상 집중은 절대 금지입니다.",
+      picks: [
+        { ticker: "LLY", name: "Eli Lilly",
+          trigger: "FDA 우선심사 부여 — 6개월 내 승인 기대",
+          trigger_detail: "FDA 우선심사 뉴스가 발행 2시간 이내 포착됐습니다. 주가가 아직 미반영 상태로 장 초반 갭 상승 가능성이 높습니다. 승인 기대감이 확산되기 전 선점 가능한 창이 열려 있습니다.",
+          expected_move: "+4~7% / 3~5일", risk_level: "보통",
+          entry_window: "22:30~23:00", entry_price: "현재가 시장가 진입",
+          stop_loss: "-5% 손절", exit_signal: "뉴스 확산 후 or +6% 달성 시 절반 익절",
+          confidence: 74 },
+      ]
+    },
+    avoid_now: [
+      { name: "TSLA (롱 포지션)", reason: "2분기 딜리버리가 컨센서스를 10% 이상 하회하며 추가 하락 압력이 지속되고 있습니다. 반등 시마다 매물이 출회되는 패턴으로 단기 롱 포지션은 위험합니다." },
+    ],
+    early_signals: [
+      { signal: "LLY FDA 우선심사 — 주요 미디어 미확산",
+        detail: "STAT News 단독 보도로 발행 2시간 이내 포착됐습니다. 주요 금융 미디어가 아직 보도하지 않아 주가 미반영 상태입니다.",
+        related_stocks: "LLY Eli Lilly", time_window: "1~2일" }
+    ],
+    kostolany_today: "FDA 소식은 빠르게 움직입니다. 초기 신호를 잡았다면 소량 진입 후 확인하는 것이 원칙입니다. 손절가를 반드시 설정하고 목표 달성 시 욕심을 부리지 마세요.",
     disclaimer: "이 분석은 코스톨라니 철학 기반 교육 목적이며 실제 투자 권유가 아닙니다."
   }
 };
@@ -85,48 +119,34 @@ const SAMPLE_PORTFOLIO = {
   positions: [
     { holding: { ticker: "000660.KS", name: "SK하이닉스", bucket: "long",
         buy_price: 178000, quantity: 10, buy_date: "2025-01-15",
-        target_price: 230000, stop_loss: 155000,
-        buy_reason: "HBM 공급 부족 구조적 수혜" },
+        target_price: 230000, stop_loss: 155000, buy_reason: "HBM 공급 부족 구조적 수혜" },
       calc: { current_price: 198500, pnl_pct: 11.5, pnl_amt: 205000,
         hold_days: 84, target_reached: 38.9, at_stop: false, at_target: false } },
-    { holding: { ticker: "034020.KS", name: "두산에너빌리티", bucket: "long",
-        buy_price: 24500, quantity: 30, buy_date: "2025-01-01",
-        target_price: 38000, stop_loss: 20000,
-        buy_reason: "SMR 글로벌 수주 기대" },
-      calc: { current_price: 31200, pnl_pct: 27.3, pnl_amt: 201000,
-        hold_days: 67, target_reached: 49.6, at_stop: false, at_target: false } },
     { holding: { ticker: "NVDA", name: "NVIDIA", bucket: "long",
         buy_price: 480.0, quantity: 5, buy_date: "2024-10-20",
-        target_price: 700.0, stop_loss: 400.0,
-        buy_reason: "AI 인프라 슈퍼사이클" },
+        target_price: 700.0, stop_loss: 400.0, buy_reason: "AI 인프라 슈퍼사이클" },
       calc: { current_price: 875.0, pnl_pct: 82.3, pnl_amt: 1975.0,
         hold_days: 117, target_reached: 177.3, at_stop: false, at_target: true } },
   ],
   analysis: {
-    portfolio_summary: "NVDA가 목표가를 77% 초과 달성해 즉시 익절이 필요한 상황입니다. 두산에너빌리티는 초기 신호와 맞물려 단기 모멘텀이 강화되고 있습니다. SK하이닉스는 안정적인 수익 구간으로 홀드 유지가 적절합니다. 전체 포트폴리오는 AI·원전 테마에 집중돼 있어 분산 필요성이 있습니다.",
+    portfolio_summary: "NVDA가 목표가를 77% 초과 달성해 즉시 익절이 필요한 상황입니다. SK하이닉스는 안정적인 수익 구간으로 홀드 유지가 적절합니다.",
     market_alignment: "현재 보유 종목 모두 AI 인프라 슈퍼사이클 테마와 정렬돼 있습니다. NVDA 익절 후 에너지·바이오 섹터로 일부 분산을 검토할 시점입니다.",
     positions: [
       { ticker: "000660.KS", signal: "홀드", urgency: "유지",
-        reason: "HBM4 엔비디아 독점 공급 지위가 유지되고 있으며 매수 근거가 완전히 유효합니다. 목표가 대비 38.9% 달성 수준으로 아직 인내가 필요한 구간입니다. 최근 뉴스 감성이 긍정적으로 유지되고 있어 추세 전환 신호가 없습니다. 분기 실적 발표 시 HBM 매출 비중을 확인하며 목표가 재설정이 필요할 수 있습니다.",
-        action_detail: "전량 홀드를 유지합니다. 다음 분기 실적 발표 시 HBM 매출 비중이 50% 미만으로 나오면 목표가를 하향 조정하고 일부 익절을 검토하세요. 손절가 155,000원은 반드시 유지하며 이탈 시 즉시 청산합니다.",
+        reason: "HBM4 엔비디아 독점 공급 지위가 유지되고 있으며 매수 근거가 완전히 유효합니다. 목표가 대비 38.9% 달성 수준으로 아직 인내가 필요한 구간입니다.",
+        action_detail: "전량 홀드를 유지합니다. 다음 분기 실적 발표 시 HBM 매출 비중이 50% 미만으로 나오면 목표가를 하향 조정하고 일부 익절을 검토하세요.",
         stop_loss_status: "현재가 198,500원 대비 손절가 155,000원까지 22% 여유. 안전 구간.",
-        next_catalyst: "다음 분기 실적 발표 — HBM 매출 비중 및 HBM4 ASP 확인 필요",
+        next_catalyst: "다음 분기 실적 발표 — HBM 매출 비중 확인 필요",
         risk_flag: "정상" },
-      { ticker: "034020.KS", signal: "일부익절", urgency: "이번주내",
-        reason: "폴란드 SMR 입찰 뉴스가 확산되며 군중 유입 조짐이 보입니다. 목표가 대비 49.6% 달성으로 코스톨라니식 부분 익절 구간에 진입했습니다. 뉴스가 주요 언론에 보도되기 시작하면 '군중이 몰릴 때 팔아라'는 원칙을 적용할 타이밍입니다. 장기 근거는 여전히 유효하므로 전량 매도보다 부분 익절이 적절합니다.",
-        action_detail: "보유량의 30%(9주)를 이번 주 내 익절하세요. 나머지 21주는 체코 본계약 확정 또는 목표가 80% 달성 시까지 홀드합니다. 익절 대금은 장기 버킷의 다른 종목으로 재투자하거나 단기 버킷 시드로 전환하세요.",
-        stop_loss_status: "현재가 31,200원 대비 손절가 20,000원까지 35% 여유. 안전 구간.",
-        next_catalyst: "체코 원전 본계약 서명 — 확정 시 추가 상승 모멘텀",
-        risk_flag: "주의" },
       { ticker: "NVDA", signal: "전량매도", urgency: "즉시",
-        reason: "목표가 $700 대비 현재가 $875로 25% 초과 달성했습니다. AI 칩 낙관론이 주요 미디어 주류로 올라섰고 개인 투자자 유입이 급증하고 있습니다. 코스톨라니의 핵심 원칙인 '뉴스가 떠들썩해질 때 팔아라'가 정확히 해당되는 상황입니다. 82.3% 수익을 실현하고 다음 기회를 기다리는 것이 현명합니다.",
-        action_detail: "오늘 장 초반 전량 매도를 실행하세요. 수익금의 70%는 장기 버킷 재투자(두산에너빌리티, HD현대일렉트릭 분할매수)에 사용하고 30%는 단기 버킷 시드로 전환하세요. NVDA는 조정 후 $650 이하에서 재진입을 검토할 수 있습니다.",
-        stop_loss_status: "목표가 초과 달성. 손절 논의 불필요. 즉시 익절이 우선.",
+        reason: "목표가 $700 대비 현재가 $875로 25% 초과 달성했습니다. AI 칩 낙관론이 주요 미디어 주류로 올라섰고 개인 투자자 유입이 급증하고 있습니다.",
+        action_detail: "오늘 장 초반 전량 매도를 실행하세요. 수익금의 70%는 장기 버킷 재투자에 사용하고 30%는 단기 버킷 시드로 전환하세요.",
+        stop_loss_status: "목표가 초과 달성. 즉시 익절이 우선.",
         next_catalyst: "GB300 출하 본격화 — 조정 후 재진입 타이밍 모니터링",
         risk_flag: "경고" },
     ],
-    rebalancing_suggestion: "현재 포트폴리오가 AI·원전 테마에 100% 집중돼 있어 섹터 리스크가 높습니다. NVDA 익절 후 바이오(노령화 테마)나 전력기기(LS일렉트릭) 등 다른 섹터로 20~30% 분산을 권장합니다. 장기:단기 버킷 비율도 재점검해 70:30 비율을 유지하세요.",
-    kostolany_advice: "NVDA는 지금 팔아야 합니다. 82%의 수익은 다시 오지 않을 수 있습니다. 코스톨라니는 항상 말했습니다 — 최고점에서 파는 것은 신만 할 수 있고, 현명한 투자자는 충분히 올랐을 때 팝니다. 수익을 지키는 것이 수익을 내는 것만큼 중요합니다.",
+    rebalancing_suggestion: "현재 포트폴리오가 AI 테마에 집중돼 있어 섹터 리스크가 높습니다. NVDA 익절 후 바이오나 전력기기 등 다른 섹터로 20~30% 분산을 권장합니다.",
+    kostolany_advice: "NVDA는 지금 팔아야 합니다. 82%의 수익은 다시 오지 않을 수 있습니다. 최고점에서 파는 것은 신만 할 수 있고, 현명한 투자자는 충분히 올랐을 때 팝니다.",
     disclaimer: "이 분석은 코스톨라니 철학 기반 교육 목적이며 실제 투자 권유가 아닙니다."
   }
 };
@@ -150,7 +170,7 @@ function StatBadge({ label, value, color }) {
     <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)",
       borderRadius: 8, padding: "10px 14px", textAlign: "center" }}>
       <div style={{ fontSize: 22, fontWeight: 600, color: color || "#e8e6df", fontFamily: "monospace", lineHeight: 1 }}>{value}</div>
-      <div style={{ fontSize: 11, color: "#5a5650", marginTop: 4, letterSpacing: "0.05em" }}>{label}</div>
+      <div style={{ fontSize: 11, color: "#5a5650", marginTop: 4 }}>{label}</div>
     </div>
   );
 }
@@ -183,7 +203,6 @@ function LongCard({ pick }) {
       background: open ? "rgba(0,230,118,0.07)" : "rgba(255,255,255,0.02)",
       borderRadius: 10, padding: "16px 18px", cursor: "pointer", marginBottom: 10, transition: "all 0.2s"
     }}>
-      {/* 헤더 */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
@@ -201,15 +220,12 @@ function LongCard({ pick }) {
           <div style={{ fontSize: 10, color: "#5a5650", marginTop: 2 }}>신뢰도</div>
         </div>
       </div>
-      {/* 신뢰도 바 */}
       <div style={{ height: 4, background: "rgba(255,255,255,0.08)", borderRadius: 2, marginBottom: 10 }}>
         <div style={{ width: `${pick.confidence}%`, height: "100%", background: "#00e676", borderRadius: 2 }} />
       </div>
-      {/* 요약 (항상 보임) */}
       <div style={{ fontSize: 13, color: "#9a9488", lineHeight: 1.7 }}>
         {pick.rationale?.slice(0, 80)}... <span style={{ color: "#5a5650" }}>{open ? "▲ 접기" : "▼ 더보기"}</span>
       </div>
-      {/* 상세 (펼침) */}
       {open && (
         <div style={{ marginTop: 14, paddingTop: 14, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <Section title="📌 투자 근거" content={pick.rationale} />
@@ -271,12 +287,11 @@ function ShortCard({ pick }) {
 
 function PortfolioCard({ position, analysisMap }) {
   const [open, setOpen] = useState(false);
-  const h   = position.holding;
-  const c   = position.calc;
-  const a   = analysisMap[h.ticker] || {};
+  const h = position.holding;
+  const c = position.calc;
+  const a = analysisMap[h.ticker] || {};
   const sig = SIGNAL_CFG[a.signal] || SIGNAL_CFG["홀드"];
   const isUrgent = a.urgency === "즉시";
-
   return (
     <div onClick={() => setOpen(o => !o)} style={{
       border: `${isUrgent ? "2px" : "1px"} solid ${isUrgent ? sig.color : "rgba(255,255,255,0.08)"}`,
@@ -296,7 +311,6 @@ function PortfolioCard({ position, analysisMap }) {
             </span>
             <span style={{ fontSize: 11, color: "#5a5650" }}>{c.hold_days}일 보유</span>
           </div>
-          {/* 수익률 바 */}
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
             <div style={{ flex: 1, height: 8, background: "rgba(255,255,255,0.08)", borderRadius: 4, overflow: "hidden" }}>
               <div style={{ width: `${Math.min(100, Math.abs(c.pnl_pct) * 1.5)}%`, height: "100%",
@@ -307,7 +321,6 @@ function PortfolioCard({ position, analysisMap }) {
               {c.pnl_pct >= 0 ? "+" : ""}{c.pnl_pct.toFixed(1)}%
             </span>
           </div>
-          {/* 핵심 수치 */}
           <div style={{ display: "flex", gap: 16, fontSize: 12, flexWrap: "wrap" }}>
             <span style={{ color: "#5a5650" }}>매수 <strong style={{ color: "#e8e6df" }}>{h.buy_price.toLocaleString()}</strong></span>
             <span style={{ color: "#5a5650" }}>현재 <strong style={{ color: "#e8e6df" }}>{c.current_price.toLocaleString()}</strong></span>
@@ -315,7 +328,6 @@ function PortfolioCard({ position, analysisMap }) {
             {c.target_reached && <span style={{ color: "#5a5650" }}>목표달성 <strong style={{ color: c.target_reached > 100 ? "#ffd54f" : "#e8e6df" }}>{c.target_reached}%</strong></span>}
           </div>
         </div>
-        {/* 신호 */}
         <div style={{ marginLeft: 16, flexShrink: 0, textAlign: "right" }}>
           <div style={{ fontSize: 22, color: sig.color, marginBottom: 4 }}>{sig.icon}</div>
           <div style={{ fontSize: 13, fontWeight: 600, color: sig.color, background: sig.bg,
@@ -365,7 +377,7 @@ function MiniCard({ title, content, color }) {
 }
 
 export default function App() {
-  const [tab, setTab]     = useState("KR");
+  const [tab, setTab]       = useState("KR");
   const [krData, setKrData] = useState(SAMPLE_KR);
   const [usData, setUsData] = useState(SAMPLE_US);
   const [pfData, setPfData] = useState(SAMPLE_PORTFOLIO);
@@ -376,7 +388,8 @@ export default function App() {
     fetch('/reports_v4/portfolio_latest.json').then(r => r.json()).then(d => { if (d.analysis) setPfData(d); }).catch(() => {});
   }, []);
 
-  const a = krData?.analysis;
+  const currentData = tab === "US" ? usData : krData;
+  const a = currentData?.analysis;
   const analysisMap = Object.fromEntries((pfData?.analysis?.positions || []).map(p => [p.ticker, p]));
 
   const TABS = [
@@ -390,7 +403,6 @@ export default function App() {
       <div style={{ position: "fixed", inset: 0, pointerEvents: "none",
         backgroundImage: "linear-gradient(rgba(200,168,75,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(200,168,75,0.02) 1px,transparent 1px)",
         backgroundSize: "48px 48px" }} />
-
       <div style={{ maxWidth: 820, margin: "0 auto", padding: "24px 16px 80px", position: "relative" }}>
 
         {/* 헤더 */}
@@ -420,15 +432,13 @@ export default function App() {
         {/* 한국장 / 미국장 */}
         {(tab === "KR" || tab === "US") && a && (
           <>
-            {/* 통계 */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 8, marginBottom: 16 }}>
-              <StatBadge label="전체 뉴스" value={krData.stats.total} />
-              <StatBadge label="🆕 초기신호" value={krData.stats.fresh} color="#ff9800" />
-              <StatBadge label="⚡ 단기" value={krData.stats.short} color="#69f0ae" />
-              <StatBadge label="📈 장기" value={krData.stats.long} color="#00e676" />
+              <StatBadge label="전체 뉴스" value={currentData.stats.total} />
+              <StatBadge label="🆕 초기신호" value={currentData.stats.fresh} color="#ff9800" />
+              <StatBadge label="⚡ 단기" value={currentData.stats.short} color="#69f0ae" />
+              <StatBadge label="📈 장기" value={currentData.stats.long} color="#00e676" />
             </div>
 
-            {/* 세션 노트 */}
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)",
               borderRadius: 10, padding: "16px 18px", marginBottom: 16 }}>
               <div style={{ fontSize: 11, color: "#c8a84b", fontFamily: "monospace", marginBottom: 8 }}>오늘의 시장 흐름</div>
@@ -441,7 +451,6 @@ export default function App() {
               )}
             </div>
 
-            {/* 초기 신호 */}
             {a.early_signals?.length > 0 && (
               <div style={{ background: "rgba(255,152,0,0.08)", border: "1px solid rgba(255,152,0,0.3)",
                 borderRadius: 10, padding: "14px 18px", marginBottom: 16 }}>
@@ -459,20 +468,16 @@ export default function App() {
               </div>
             )}
 
-            {/* 장기 버킷 */}
             <div style={{ marginBottom: 24 }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-                <div>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>📈 장기 버킷</span>
-                  <span style={{ fontSize: 12, color: "#5a5650", marginLeft: 8, fontFamily: "monospace" }}>{a.long_bucket.allocation}</span>
-                </div>
+                <span style={{ fontSize: 16, fontWeight: 600 }}>📈 장기 버킷</span>
+                <span style={{ fontSize: 12, color: "#5a5650", fontFamily: "monospace" }}>{a.long_bucket.allocation}</span>
               </div>
               <div style={{ fontSize: 13, color: "#c8a84b", marginBottom: 6 }}>{a.long_bucket.theme}</div>
               <div style={{ fontSize: 13, color: "#7a7068", lineHeight: 1.7, marginBottom: 12 }}>{a.long_bucket.theme_description}</div>
               {a.long_bucket.picks.map((p, i) => <LongCard key={i} pick={p} />)}
             </div>
 
-            {/* 단기 버킷 */}
             <div style={{ marginBottom: 24 }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
                 <span style={{ fontSize: 16, fontWeight: 600 }}>⚡ 단기 버킷</span>
@@ -485,7 +490,6 @@ export default function App() {
               {a.short_bucket.picks.map((p, i) => <ShortCard key={i} pick={p} />)}
             </div>
 
-            {/* 회피 */}
             {a.avoid_now?.length > 0 && (
               <div style={{ marginBottom: 24 }}>
                 <div style={{ fontSize: 16, fontWeight: 600, marginBottom: 10 }}>⛔ 현재 회피</div>
@@ -499,7 +503,6 @@ export default function App() {
               </div>
             )}
 
-            {/* 코스톨라니 */}
             <div style={{ background: "rgba(200,168,75,0.07)", border: "1px solid rgba(200,168,75,0.2)",
               borderRadius: 12, padding: "18px 20px" }}>
               <div style={{ fontSize: 11, color: "#c8a84b", fontFamily: "monospace", marginBottom: 10, letterSpacing: "0.15em" }}>🎩 오늘의 코스톨라니</div>
@@ -511,10 +514,7 @@ export default function App() {
         {/* 포트폴리오 */}
         {tab === "PF" && (
           <>
-            {/* 즉시 조치 배너 */}
             <AlertBanner positions={pfData.positions} analysisMap={analysisMap} />
-
-            {/* 요약 수치 */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 8, marginBottom: 16 }}>
               <StatBadge label="총 평가손익"
                 value={`${pfData.positions.reduce((s,p)=>s+p.calc.pnl_amt,0)>=0?"+":""}${pfData.positions.reduce((s,p)=>s+p.calc.pnl_amt,0).toLocaleString()}`}
@@ -525,7 +525,6 @@ export default function App() {
                 color={pfData.positions.filter(p=>analysisMap[p.holding.ticker]?.urgency==="즉시").length>0?"#ff5252":"#00e676"} />
             </div>
 
-            {/* 포트폴리오 진단 */}
             <div style={{ background: "rgba(200,168,75,0.06)", border: "1px solid rgba(200,168,75,0.18)",
               borderRadius: 12, padding: "16px 18px", marginBottom: 16 }}>
               <div style={{ fontSize: 11, color: "#c8a84b", fontFamily: "monospace", marginBottom: 8 }}>포트폴리오 진단</div>
@@ -536,7 +535,6 @@ export default function App() {
               <p style={{ margin: 0, fontSize: 13, color: "#9a8848", fontStyle: "italic", lineHeight: 1.7 }}>"{pfData.analysis.kostolany_advice}"</p>
             </div>
 
-            {/* 종목 카드 */}
             <div style={{ fontSize: 12, color: "#5a5650", marginBottom: 10, fontFamily: "monospace" }}>조치 우선순위 순 · 카드 클릭 시 상세</div>
             {[...pfData.positions]
               .sort((a, b) => {
@@ -546,7 +544,6 @@ export default function App() {
               .map((pos, i) => <PortfolioCard key={i} position={pos} analysisMap={analysisMap} />)
             }
 
-            {/* 리밸런싱 제안 */}
             {pfData.analysis.rebalancing_suggestion && (
               <div style={{ marginTop: 16, background: "rgba(255,255,255,0.03)",
                 border: "1px solid rgba(255,255,255,0.08)", borderRadius: 10, padding: "14px 18px" }}>
