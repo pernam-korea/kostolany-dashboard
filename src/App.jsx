@@ -383,11 +383,12 @@ export default function App() {
   const [pfData, setPfData] = useState(SAMPLE_PORTFOLIO);
 
   useEffect(() => {
-    fetch('/reports_v4/latest_kr.json').then(r => r.json()).then(d => { if (d.analysis) setKrData(d); }).catch(() => {});
-    fetch('/reports_v4/latest_us.json').then(r => r.json()).then(d => { if (d.analysis) setUsData(d); }).catch(() => {});
-    fetch('/reports_v4/portfolio_latest.json').then(r => r.json()).then(d => { if (d.analysis) setPfData(d); }).catch(() => {});
+    const t = `?t=${Date.now()}`;
+    fetch(`/reports_v4/latest_kr.json${t}`).then(r => r.json()).then(d => { if (d.analysis) setKrData(d); }).catch(() => {});
+    fetch(`/reports_v4/latest_us.json${t}`).then(r => r.json()).then(d => { if (d.analysis) setUsData(d); }).catch(() => {});
+    fetch(`/reports_v4/portfolio_latest.json${t}`).then(r => r.json()).then(d => { if (d.analysis) setPfData(d); }).catch(() => {});
   }, []);
-
+  
   const currentData = tab === "US" ? usData : krData;
   const a = currentData?.analysis;
   const analysisMap = Object.fromEntries((pfData?.analysis?.positions || []).map(p => [p.ticker, p]));
