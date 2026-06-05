@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-29T11:48:18.429065",
+  "generated_at": "2026-06-05T11:40:30.909088",
   "market": "US",
   "stats": {
     "total": 50,
-    "fresh": 2,
-    "short": 9,
-    "long": 6
+    "fresh": 0,
+    "short": 4,
+    "long": 14
   },
   "analysis": {
-    "error": "Unterminated string starting at: line 43 column 22 (char 3374)"
+    "error": "Unterminated string starting at: line 32 column 25 (char 3157)"
   }
 }
