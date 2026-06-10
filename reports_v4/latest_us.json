@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T11:48:36.976343",
+  "generated_at": "2026-06-10T11:56:13.964723",
   "market": "US",
   "stats": {
     "total": 50,
@@ -8,6 +8,6 @@
     "long": 12
   },
   "analysis": {
-    "error": "Unterminated string starting at: line 35 column 26 (char 3288)"
+    "error": "Unterminated string starting at: line 43 column 22 (char 3314)"
   }
 }
