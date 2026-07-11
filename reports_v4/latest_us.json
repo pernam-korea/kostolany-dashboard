@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-12T11:55:15.398621",
+  "generated_at": "2026-07-11T11:44:47.705090",
   "market": "US",
   "stats": {
     "total": 50,
-    "fresh": 0,
-    "short": 2,
-    "long": 10
+    "fresh": 1,
+    "short": 7,
+    "long": 11
   },
   "analysis": {
-    "error": "Unterminated string starting at: line 35 column 9 (char 3241)"
+    "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcvDJF9LXWaEMHYiX33yZ'}"
   }
 }
