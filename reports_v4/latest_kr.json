@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-13T22:47:18.368261",
+  "generated_at": "2026-07-14T22:49:27.240353",
   "market": "KR",
   "stats": {
-    "total": 2,
-    "fresh": 2,
-    "short": 0,
-    "long": 1
+    "total": 50,
+    "fresh": 0,
+    "short": 5,
+    "long": 13
   },
   "analysis": {
-    "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CczsSG8mzrBB65mztS3rP'}"
+    "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd2mQgJakuZmxF1Wpk3Ux'}"
   }
 }
