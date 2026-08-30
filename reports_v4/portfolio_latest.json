@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T01:10:41.326629",
+  "generated_at": "2026-08-30T15:06:53.719611",
   "positions": [
     {
       "holding": {
@@ -40,9 +40,9 @@
         "notes": "현재가 131.24 / 손익률 +51.20%"
       },
       "calc": {
-        "current_price": 85.3172,
-        "pnl_pct": -1.79,
-        "pnl_amt": -7.77,
+        "current_price": 90.7936,
+        "pnl_pct": 4.51,
+        "pnl_amt": 19.61,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -64,9 +64,9 @@
         "notes": "현재가 419.28 / 손익률 +6.88%"
       },
       "calc": {
-        "current_price": 381.8887,
-        "pnl_pct": -2.59,
-        "pnl_amt": -10.17,
+        "current_price": 382.7386,
+        "pnl_pct": -2.38,
+        "pnl_amt": -9.32,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -88,9 +88,9 @@
         "notes": "현재가 3.91 / 손익률 -69.75% ⚠️ 대규모 손실"
       },
       "calc": {
-        "current_price": 12.3273,
-        "pnl_pct": -4.56,
-        "pnl_amt": -58.28,
+        "current_price": 12.8005,
+        "pnl_pct": -0.89,
+        "pnl_amt": -11.43,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -112,9 +112,9 @@
         "notes": "현재가 102.90 / 손익률 -22.31%"
       },
       "calc": {
-        "current_price": 127.7823,
-        "pnl_pct": -3.24,
-        "pnl_amt": -60.0,
+        "current_price": 131.4556,
+        "pnl_pct": -0.46,
+        "pnl_amt": -8.57,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -136,9 +136,9 @@
         "notes": "현재가 43.40 / 손익률 +17.43%"
       },
       "calc": {
-        "current_price": 37.8732,
-        "pnl_pct": 2.33,
-        "pnl_amt": 15.55,
+        "current_price": 37.1378,
+        "pnl_pct": 0.35,
+        "pnl_amt": 2.31,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -160,9 +160,9 @@
         "notes": "현재가 99.95 / 손익률 +0.85%"
       },
       "calc": {
-        "current_price": 97.3567,
-        "pnl_pct": -1.48,
-        "pnl_amt": -4.4,
+        "current_price": 101.6706,
+        "pnl_pct": 2.88,
+        "pnl_amt": 8.54,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -184,9 +184,9 @@
         "notes": "현재가 396.88 / 손익률 -0.72%"
       },
       "calc": {
-        "current_price": 407.4631,
-        "pnl_pct": 2.04,
-        "pnl_amt": 3.26,
+        "current_price": 346.59,
+        "pnl_pct": -13.21,
+        "pnl_amt": -21.09,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -208,9 +208,9 @@
         "notes": "현재가 281,500 / 손익률 +22.31%"
       },
       "calc": {
-        "current_price": 232983.1216,
-        "pnl_pct": 1.65,
-        "pnl_amt": 15084.49,
+        "current_price": 218949.1208,
+        "pnl_pct": -4.48,
+        "pnl_amt": -41051.52,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -232,9 +232,9 @@
         "notes": "현재가 272,500 / 손익률 +9.20%"
       },
       "calc": {
-        "current_price": 239814.9894,
-        "pnl_pct": -3.49,
-        "pnl_amt": -8685.01,
+        "current_price": 241049.6407,
+        "pnl_pct": -3.0,
+        "pnl_amt": -7450.36,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -256,9 +256,9 @@
         "notes": "현재가 111,800 / 손익률 -1.05%"
       },
       "calc": {
-        "current_price": 113306.7286,
-        "pnl_pct": 0.72,
-        "pnl_amt": 806.73,
+        "current_price": 107938.6673,
+        "pnl_pct": -4.05,
+        "pnl_amt": -4561.33,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -280,9 +280,9 @@
         "notes": "현재가 17,970 / 손익률 -3.17%"
       },
       "calc": {
-        "current_price": 19415.523,
-        "pnl_pct": 4.85,
-        "pnl_amt": 8985.23,
+        "current_price": 18455.3562,
+        "pnl_pct": -0.33,
+        "pnl_amt": -616.44,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -304,9 +304,9 @@
         "notes": "현재가 12,570 / 손익률 -4.21%"
       },
       "calc": {
-        "current_price": 13527.692,
-        "pnl_pct": 3.32,
-        "pnl_amt": 14344.84,
+        "current_price": 13202.0044,
+        "pnl_pct": 0.83,
+        "pnl_amt": 3597.15,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -328,9 +328,9 @@
         "notes": "현재가 39,630 / 손익률 -6.08%"
       },
       "calc": {
-        "current_price": 40129.989,
-        "pnl_pct": -4.67,
-        "pnl_amt": -7868.04,
+        "current_price": 42628.2693,
+        "pnl_pct": 1.26,
+        "pnl_amt": 2125.08,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -352,9 +352,9 @@
         "notes": "현재가 23,540 / 손익률 -1.96%"
       },
       "calc": {
-        "current_price": 23420.4293,
-        "pnl_pct": -2.24,
-        "pnl_amt": -4292.57,
+        "current_price": 23910.1162,
+        "pnl_pct": -0.2,
+        "pnl_amt": -375.07,
         "hold_days": 606,
         "target_reached": null,
         "at_stop": false,
@@ -363,6 +363,6 @@
     }
   ],
   "analysis": {
-    "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeY3PTjx8t31D72uRZXJt'}"
+    "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeZ99tKsL74sbEpNtbDWL'}"
   }
 }
